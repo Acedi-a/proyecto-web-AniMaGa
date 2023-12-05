@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(32, 35, 52);
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+.arriba{
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 35, 52);
+    padding: 20px;
+}
+
+nav a, h1 {
+    text-decoration: none !important;
+    color: #fff; /* Cambia este valor al color que desees */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Corregido el nombre de la propiedad transition */
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #ff3c00; /* Cambia el color al pasar el mouse sobre los enlaces */
+    transform: translateY(-10px); /* Agregada la unidad de medida a translateY */
+}
+
+
