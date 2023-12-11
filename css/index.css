@@ -73,7 +73,7 @@ nav a:hover {
     grid-gap: 20px;
     align-items: center;
     text-align: justify;
-    margin-top: -50px; /* Ajusta el valor según cuánto deseas que se desplace hacia arriba */
+    margin-top: -50px; 
 }
 
 
@@ -138,11 +138,9 @@ nav a:hover {
     margin-right: 170px; 
 }
 
-.detalles-serie-otros{
-}
 
 .detalles-rank {
-    display: flex; /* Asegura que los elementos hijos sigan un modelo de caja flex */
+    display: flex; 
     justify-content: center;
 }
 

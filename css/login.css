@@ -1,0 +1,131 @@
+body {
+    background-color: #191919;
+    height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+    margin: 0;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arriba{
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 35, 52);
+    padding: 20px;
+}
+
+nav a, h1 {
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #ff3c00;
+    transform: translateY(10px); 
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px ;
+    background-image: url(../imagenes/fondo.login2.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    max-width:600px;
+    height: 550px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, .iniciar-sesion {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.entrada {
+    width: 300px;
+    font-size: 25px;
+    border-radius: 8px;
+    background: local;
+    color: white;
+    border: 0px;
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+.entrada:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Agrega una sombra blanca en el hover */
+}
+
+
+.iniciar-sesion {
+    font-size: 24px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(3, 106, 191);
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.iniciar-sesion:hover{
+    box-shadow: 0 0 25px rgba(93, 214, 242, 0.821);
+}
+
+.login-externo{
+    /* nada por el momento*/
+}
+
+.login-externo i{
+    font-size: 1.7em;
+    margin: 0 15px;
+    color: white;
+    transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+.login-externo i:hover{
+    filter: drop-shadow(0 0 15px white);
+    transform: scale(1.2);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(32, 35, 52);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    position: fixed; /* Fija el elemento en una posición específica con respecto a la ventana del navegador */
+    bottom: 0; /* Ajusta el borde inferior del elemento al borde inferior de su contenedor (en este caso, la ventana del navegador) */
+    left: 0; /* Ajusta el borde izquierdo del elemento al borde izquierdo de su contenedor */
+    width: 100%; /* Hace que el ancho del elemento sea igual al ancho completo de su contenedor */
+    background-color: rgb(32, 35, 52); /* Establece el color de fondo del elemento */
+    color: #fff; /* Establece el color del texto del elemento */
+    text-align: center; /* Centra el texto dentro del elemento */
+    padding: 10px; /* Agrega espacio de relleno (padding) alrededor del contenido del elemento */
+}
