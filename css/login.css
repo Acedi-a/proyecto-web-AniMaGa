@@ -1,14 +1,19 @@
 body {
-    background-color: #191919;
+    background:linear-gradient(-45deg,rgb(85, 0, 255), rgb(0, 0, 0), rgb(85, 0, 255),black);
     height: 100vh;
     background-position: center;
     background-size: 100% 100%;
+    background-size: cover;
     color: white;
     margin: 0;
-
-    justify-content: center;
+    justify-content: space;
     align-items: center;
     text-align: center;
+}
+
+.cuerpo-login{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .arriba{
@@ -34,23 +39,40 @@ nav a:hover {
     transform: translateY(10px); 
 }
 
-.login{
+
+.login, .registro{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 24px ;
-    background-image: url(../imagenes/fondo.login2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 30px;
-    max-width:600px;
-    height: 550px;
+    max-width:1000px;
+    height: 500px;
+    width: 400px;
     margin: auto;
     margin-top: 50px;
     font-family: 'Outfit', sans-serif;
+    transition: all 0.3s ease-in-out;
+
 }
 
+.login:hover, .registro:hover{
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 50px white;
+    transform: scale(1.05);
+}
 
+.registro{
+    height: 620px !important;
+}
+
+.login-titulo{
+    margin-top: -20px;
+}
 
 .formulario{
     display: flex;
@@ -90,10 +112,6 @@ input, .iniciar-sesion {
 
 .iniciar-sesion:hover{
     box-shadow: 0 0 25px rgba(93, 214, 242, 0.821);
-}
-
-.login-externo{
-    /* nada por el momento*/
 }
 
 .login-externo i{

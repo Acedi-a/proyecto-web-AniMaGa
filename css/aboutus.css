@@ -7,52 +7,34 @@ body {
 
 /* Parte de arriba header*/
 
-header{
-    background-color: #191919;
-    color: rgb(255, 255, 255) ;
+.arriba{
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 35, 52);
     padding: 20px;
-    text-align: center;
+}
+
+nav a, h1 {
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: bold;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    margin: 8px;
 }
 
-h1 {
-    margin-bottom: 20px;
-    display: inline-block;
-    transition: color 0.5s ease,transform 0.5s ease, text-shadow 0.5s ease}
-
-h1:hover {
-    color: #e74c3c; /* Color al hacer hover */
-    transform: scale(1.1); /* Escala al hacer hover */
-    text-shadow: 0 0 10px;
-}
-
-nav{
-    background-color: rgb(39, 39, 67);
-    color: white ;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    transition: color 1s ease, transform 0.3s ease; 
-    padding: 10px;
-    margin: 0 5px;
-    display: inline-block;
-    font-size: 20px;
-}
-
-nav a:hover{
-    color: red ;
-    transform: translateY(-8px);
+nav a:hover {
+    color: #ff3c00;
+    transform: translateY(10px); 
 }
 
 
 .cuerpo{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
 
 }
 

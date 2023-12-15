@@ -1,8 +1,8 @@
 body {
-    background-color: #191919;
+    background:linear-gradient(rgb(26, 2, 73), rgb(0, 0, 0), rgb(30, 3, 83));
     height: 100vh;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: contain;
     color: white;
     margin: 0;
     justify-content: center;
@@ -180,22 +180,7 @@ nav a:hover {
     font-size: 2em;
     margin:0 10px;
     transition: filter 0.3s ease,transform 0.3s ease;
-}
-
-.detalles-icon-face{
-    color:rgb(28, 124, 219);
-}
-
-.detalles-icon-disc{
-    color:rgb(110, 83, 229);
-}
-
-.detalles-icon-x{
-    color:wheat;
-}
-
-.detalles-icon-whats{
-    color:rgb(0, 234, 43);
+    color: white;
 }
 
 .detalles-interaccion-redes i:hover {
@@ -204,6 +189,143 @@ nav a:hover {
 }
 
 /* Secciones */
+
+/*-----------------------------------------------------------*/
+
+/* Personajes */
+
+.seccion-personajes{
+    background-color: rgb(32, 35, 52);
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    width: 1100px;
+    height: 300px;
+}
+
+.descripcion-seccion{
+    font-family: 'Alata', sans-serif;
+}
+
+.personajes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido verticalmente */
+    margin: 10px; /* Añadir margen para separar las personas */
+}
+
+.persona-foto{
+    width: 145px;
+    border-radius: 25%;
+    height: 100%;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.persona-foto:hover{
+    box-shadow: 0 0 10px white;
+    transform: scale(1.05);
+}
+
+.persona-nombre, .persona-serie{
+    margin: 5px;
+}
+
+.flecha-izq, .flecha-der{
+    align-self: center;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.flecha-izq:hover, .flecha-der:hover{
+    filter: drop-shadow(0 0 15px white);
+    transform: scale(1.2);
+}
+/* Personajes */
+
+/*---------------------------------------------------*/
+
+/*  arte popular */
+
+.seccion-arte{
+    background-color: rgb(32, 35, 52);
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    width: 1100px;
+    height: 1125px;
+}
+
+.arte-imagenes {
+    grid-template-areas: 
+        "a b c c d"
+        "e e e e e"
+        "e e e e e"
+        "f f g h h";
+    display: grid;
+    gap: 1rem;
+}
+
+.arte-imagenes img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.arte-imagenes img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px white;
+}
+
+.arte-imagenes img:nth-child(1) {
+    grid-area: a;
+}
+
+.arte-imagenes img:nth-child(2) {
+    grid-area: b;
+}
+
+.arte-imagenes img:nth-child(3) {
+    grid-area: c;
+}
+
+.arte-imagenes img:nth-child(4) {
+    grid-area: d;
+}
+
+.arte-imagenes img:nth-child(5) {
+    grid-area: e;
+    height: 500px;
+    object-fit: cover; /* Rellena completamente el área manteniendo la relación de aspecto */
+    object-position: bottom; /* Muestra la parte inferior de la imagen */
+}
+
+.arte-imagenes img:nth-child(6) {
+    grid-area: f;
+}
+
+.arte-imagenes img:nth-child(7) {
+    grid-area: g;
+}
+
+.arte-imagenes img:nth-child(8) {
+    grid-area: h;
+}
+
+
+
+
+/* arte popular */
 
 
 footer {
