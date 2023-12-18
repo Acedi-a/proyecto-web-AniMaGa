@@ -22,31 +22,50 @@
         <link rel="icon" href="imagenes/icono.ico">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
         <title>AniMaGa</title>
     </head>
     <body>
-        <div class="arriba">
-            <h1>AniMaGa</h1>
-            <div class="login">
-                <a href="login.html">
-                    <button type="button">Entrar</button>
-                </a>
+        <nav class="navbar navbar-expand-lg navbar-dark" >
+            <a class="navbar-brand" href="index.html">AniMaGa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estrenos.html">Estrenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chatbot.html"><i class="fa-solid fa-face-smile-wink"></i></a>
+                    </li>
+                </ul>
+                <div class="nav-item">
+                    <a href="login.html" class="btn btn-outline-light">Entrar</a>
+                </div>
             </div>
-            <nav>
-
-                <a href="index.html">Inicio</a>
-                <a href="catalogo.html">Catalogo</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="noticias.html">Noticias</a>
-                <a href="estrenos.html">Estrenos</a>
-                <a href="aboutus.html">Sobre nosotros</a>
-                <a href="chatbot.html">
-                    <i class="fa-solid fa-face-smile-wink"></i>
-                </a>
-                </nav>
-        </div>
+        </nav>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         
 
         <!-- <img src="imagenes/bg.jpg" alt="Fondo de la web"> -->
@@ -55,7 +74,9 @@
                 <h2 class="titulo-seccion">Anime del día</h2>
                 <div class="contenido-seccion">
                     <div class="imagen-serie">
-                        <img class="imagen-serie-portada" src="imagenes/jujutsu.webp" alt="jujutu kaisen">
+                        <a href="#">
+                            <img class="imagen-serie-portada" src="imagenes/jujutsu.webp" alt="jujutu kaisen">
+                        </a>
                     </div>
                     <div class="datos-serie">
                         <p class="titulo-serie"><b>Titulo de la serie/anime</b></p>
@@ -99,12 +120,13 @@
                 <h2 class="titulo-seccion">Animes Populares</h2>
                 <div class="contenido-seccion">
                     <div class="imagen-serie">
-                        <img class="imagen-serie-portada" src="imagenes/jujutsu.webp" alt="jujutu kaisen">
+                        <a href="anime.html">
+                            <img class="imagen-serie-portada" src="imagenes/portadas/cyberpunk.jpg" alt="jujutu kaisen">
+                        </a>
                     </div>
                     <div class="datos-serie">
-                        <p class="titulo-serie"><b>Titulo de la serie/anime</b></p>
-                        <p class="descripcion-serie">Después de un giro trágico de eventos, Yuji se involucra en el mundo de los Jujutsu, una disciplina que implica el uso de maldiciones y técnicas especiales para combatir seres malignos. Se une a la escuela de hechicería Tokyo Metropolitan Jujutsu High, donde se encuentra con personajes como Megumi Fushiguro y Nobara Kugisaki, quienes también son estudiantes de Jujutsu.
-                            Junto con su mentor, Satoru Gojo, y sus compañeros, Yuji se embarca en una misión para recolectar y destruir todos los dedos malditos y la poderosa maldición ancestral, Sukuna Ryomen, antes de que causen más caos y destrucción. La serie combina intensas batallas con momentos de comedia y exploración de los vínculos entre los personajes, creando una historia emocionante y llena de acción.</p>
+                        <p class="titulo-serie"><b>Cyberpunk Edgerunners</b></p>
+                        <p class="descripcion-serie">En un futuro distópico de Night City, donde la tecnología y las corporaciones lo dominan todo, David Martínez es un joven que decide convertirse en un "edgerunner", un mercenario ciberizado que realiza trabajos peligrosos al margen de la ley.</p>
                         <div class="detalles-serie">
                             <div class="detalles-serie-datos">
                                 <p class="detalles-serie-datos-parrafo">Temporadas: </p>

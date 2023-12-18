@@ -21,71 +21,161 @@
         <!-- Links de fuentes -->
         <link rel="icon" href="imagenes/icono.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/noticias.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
     <title>AniMaGa</title>
 </head>
 <body>
-    <div class="arriba">
-        <h1>AniMaGa</h1>
-        <div class="login">
-            <a href="login.html">
-                <button type="button">Entrar</button>
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+        <a class="navbar-brand" href="index.html">AniMaGa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html"><i class="fa-solid fa-face-smile-wink"></i></a>
+                </li>
+            </ul>
+            <div class="nav-item">
+                <a href="login.html" class="btn btn-outline-light">Entrar</a>
+            </div>
         </div>
-        <nav>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html">Catalogo</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="estrenos.html">Estrenos</a>
-            <a href="aboutus.html">Sobre nosotros</a>
-            <a href="chatbot.html">
-                <i class="fa-solid fa-face-smile-wink"></i>
-            </a>
-            </nav>
+    
+    <div class="seccion">
+        <div class="noticias-recientes">
+            <h2 class="titulo">Noticias recientes</h2>
+            <div class="noticias">
+                <i class="fa-solid fa-chevron-left flecha-der"></i>
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-de-chainsaw-man-regresa-con-una-nueva-pelicula-del-arco-de-reze/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/Chainsaw-Man-Reze.jpg" alt="">
+                        </div>
+                        <h3>El anime de Chainsaw Man regresa con una nueva película del arco de Reze</h3>
+                    </a>
+                </div>               
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/bleach-prepara-su-regreso-con-un-asombroso-avance/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/09/F7SCcdmXwAEHMhv.jpg" alt="">
+                        </div>
+                        <h3>BLEACH prepara su regreso con un asombroso avance</h3>
+                    </a>
+                </div> 
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-sousou-no-frieren-entrara-en-pausa/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/Sousou.no_.Frieren.full_.4004083.png" alt="">
+                        </div>
+                        <h3>El anime Sousou no Frieren entrará en pausa
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-dandadan-emociona-con-un-nuevo-avance/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/11/DND_teaser.jpg" alt="">
+                        </div>
+                        <h3>El anime Dandadan emociona con un nuevo avance
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/manga/jujutsu-kaisen-llegara-a-su-final-en-2024/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/jyujyutsu25.jpg" alt="">
+                        </div>
+                        <h3>Jujutsu Kaisen llegará a su final en 2024
+                        </h3>
+                    </a>
+                </div>
+                <i class="fa-solid fa-chevron-right flecha-der"></i>
+            </div>   
+        </div>
+
+
+        <div class="noticias-recientes">
+            <h2 class="titulo">Noticias populares</h2>
+            <div class="noticias">
+                <i class="fa-solid fa-chevron-left flecha-der"></i>
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-de-chainsaw-man-regresa-con-una-nueva-pelicula-del-arco-de-reze/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/Chainsaw-Man-Reze.jpg" alt="">
+                        </div>
+                        <h3>El anime de Chainsaw Man regresa con una nueva película del arco de Reze</h3>
+                    </a>
+                </div>      
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-one-piece-tendra-remake-por-wit-studio/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/The-One-Piece.jpg" alt="">
+                        </div>
+                        <h3>El anime One Piece tendrá remake por WIT STUDIO
+                        </h3>
+                    </a>
+                </div>               
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/blue-exorcist-fecha-su-regreso-con-un-emocionante-avance/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/GBb37AxaMAAXR8p.jpg" alt="">
+                        </div>
+                        <h3>Blue Exorcist fecha su regreso con un emocionante avance
+
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/anime/bleach-prepara-su-regreso-con-un-asombroso-avance/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/09/F7SCcdmXwAEHMhv.jpg" alt="">
+                        </div>
+                        <h3>BLEACH prepara su regreso con un asombroso avance</h3>
+                    </a>
+                </div> 
+                <div class="noti">
+                    <a href="https://somoskudasai.com/noticias/manga/jujutsu-kaisen-llegara-a-su-final-en-2024/">
+                        <div class="imagen">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2023/12/jyujyutsu25.jpg" alt="">
+                        </div>
+                        <h3>Jujutsu Kaisen llegará a su final en 2024
+                        </h3>
+                    </a>
+                </div>
+                <i class="fa-solid fa-chevron-right flecha-der"></i>
+            </div>
+            
+        </div>
+        
     </div>
     
-    <div class="noticias">
-        <div class="noticias-recientes">
-            <h2>Noticias recientes</h2>
-            <div class="noticia-1">
-                <h3>Titulo noticia 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-            <div class="noticia-2">
-                <h3>Titulo noticia 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-            <div class="noticia-3">
-                <h3>Titulo noticia 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-            <div class="noticia-4">
-                <h3>Titulo noticia 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-        </div>
-        <div class="noticias-populares">
-            <h2>Noticias Populares</h2>
-            <div class="noticia-1">
-                <h3>Titulo noticia 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-            <div class="noticia-2">
-                <h3>Titulo noticia 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-            <div class="noticia-3">
-                <h3>Titulo noticia 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-            <div class="noticia-4">
-                <h3>Titulo noticia 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore minima neque provident ipsa amet consequatur dolores voluptatibus aspernatur non accusamus, ex maiores fuga totam illo laboriosam animi a expedita!</p>
-            </div>
-        </div>
-    </div>
 </body>
 <footer>
     <p>&copy: 2023 AniMaGa. Todos los derehcos reservados</p>

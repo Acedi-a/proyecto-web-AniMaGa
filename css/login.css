@@ -13,7 +13,7 @@ body {
 
 .cuerpo-login{
     display: flex;
-    flex-wrap: nowrap;
+
 }
 
 .arriba{
@@ -56,13 +56,20 @@ nav a:hover {
     margin-top: 50px;
     font-family: 'Outfit', sans-serif;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .cuerpo-login {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
 .login:hover, .registro:hover{
     border-radius: 20px;
     border: 1px solid white;
-    box-shadow: 0 0 50px white;
+    box-shadow: 0 0 20px white;
     transform: scale(1.05);
 }
 
@@ -134,16 +141,5 @@ footer {
     background-color: rgb(32, 35, 52);
     color: #fff;
     text-align: center;
-    padding: 10px;
-}
-
-footer {
-    position: fixed; /* Fija el elemento en una posición específica con respecto a la ventana del navegador */
-    bottom: 0; /* Ajusta el borde inferior del elemento al borde inferior de su contenedor (en este caso, la ventana del navegador) */
-    left: 0; /* Ajusta el borde izquierdo del elemento al borde izquierdo de su contenedor */
-    width: 100%; /* Hace que el ancho del elemento sea igual al ancho completo de su contenedor */
-    background-color: rgb(32, 35, 52); /* Establece el color de fondo del elemento */
-    color: #fff; /* Establece el color del texto del elemento */
-    text-align: center; /* Centra el texto dentro del elemento */
-    padding: 10px; /* Agrega espacio de relleno (padding) alrededor del contenido del elemento */
+    padding: 5px;
 }
