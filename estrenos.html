@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Explora el emocionante mundo del anime y los juegos en AniMaGa. Descubre episodios, reseñas, noticias y únete a la comunidad. ¡Vive la pasión con nosotros!">
         <meta name="keywords" content="Anime,manga,game,juegos,waifu,geek,otakus,games">
@@ -20,126 +20,148 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
         <!-- Links de fuentes -->
         <link rel="icon" href="imagenes/icono.ico">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/estrenos.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="js/script.js"></script>
 
-
-        <title>AniMaGa</title>
-    </head>
-    <body>
-        <div class="arriba">
-            <h1>AniMaGa</h1>
-            <div class="login">
-                <a href="login.html">
-                    <button type="button">Entrar</button>
-                </a>
-            </div>
-            <nav>
-
-                <a href="index.html">Inicio</a>
-                <a href="catalogo.html">Catalogo</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="noticias.html">Noticias</a>
-                <a href="estrenos.html">Estrenos</a>
-                <a href="aboutus.html">Sobre nosotros</a>
-                <a href="chatbot.html">
-                    <i class="fa-solid fa-face-smile-wink"></i>
-                </a>
-                </nav>
-        </div>
-        
-        <div class="estrenos-filtros">
-            <nav>
-                <a href="#">Orden</a>
-                <a href="#">Tipo</a>
-                <a href="#">Genero</a>
-            </nav>
-            <input type="text" name="filtro-busqueda" id="filtro-busqueda" placeholder="Buscar anime">
-            <button type="submit">
-                Filtrar
-            </button>
-        </div>
-
-        <div class="contenido">
-            <button type="button">Estrenos</button>
-            <button type="button">Proximamente</button>
-            <div class="contenido-estrenos">
-                <h2>Lunes</h2>
-                <div class="lunes">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-                <h2>Martes</h2>
-                <div class="martes">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-                <h2>Miercoles</h2>
-                <div class="miercoles">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-                <h2>Jueves</h2>
-                <div class="jueves">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-                <h2>Viernes</h2>
-                <div class="viernes">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-                <h2>Sabado</h2>
-                <div class="sabado">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-                <h2>Domingo</h2>
-                <div class="domingo">
-                    <div class="anime1">
-                        <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100" width="200px">
-                        <h3>Mob Psycho 100</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contenido-proximamente">
-                <h2>Proximamente</h2>
-                <div class="contenido-portadas">
-                    <h2>2024</h2>
-                    <div class="anime1">
-                        <img src="imagenes/portadas/megalo-box.webp" alt="megalo-box portada" width="200px">
-                        <h3>Megalo Box </h3>
-                        <p>14/03/2024</p>
-                    </div>
-
-                    <div class="anime2">
-                        <img src="imagenes/portadas/junji-ito-collection.jpe" alt="junji-ito-collection portada" width="200px">
-                        <h3>Junji Ito Collection </h3>              
-                        <p>20/06/2024</p>
-                    </div>
-
-
-                </div>
+    <title>AniMaGa</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+        <a class="navbar-brand" href="index.html">AniMaGa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html"><i class="fa-solid fa-face-smile-wink"></i></a>
+                </li>
+            </ul>
+            <div class="nav-item">
+                <a href="login.html" class="btn btn-outline-light">Entrar</a>
             </div>
         </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        
-        
-    </body>
+    
+    <div class="seccion">
+        <div class="noticias-recientes">
+            <h2 class="titulo">Proximamente</h2>
+            <div class="noticias">
+                <div class="noti" data-video-url="https://www.youtube.com/watch?v=NEDYgw1Wf_I">
+                    <a href="https://www.youtube.com/watch?v=NEDYgw1Wf_I">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/4/69/1660240005.jpg" alt="kami no tou s2">
+                        </div>
+                        <h3>Kami no tou 2nd Season</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=Y0oMxE2rFU4">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/0/2f/1664862160.jpg" alt="devil my cry">
+                        </div>
+                        <h3>Devil my Cry</h3>
+                    </a>
+                </div> 
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=9x-Rvn1LaQs">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/a/07/1695923206.jpg" alt="castlevania nocturne">
+                        </div>
+                        <h3>Castlevania Nocturne
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=s2DweFh5iRA">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/6/6e/1702363321.jpg" alt="ao no exorcist: shimane illuminati-hen">
+                        </div>
+                        <h3>Ao no Exorcist: Shimane Illuminati-hen
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=FfktneSXVos">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/9/5e/1702417389.jpg" alt="tsukimichi moonlight fantasy 2nd season">
+                        </div>
+                        <h3>Tsukimichi Moonlit Fantasy
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/results?search_query=burn+the+witch+0.8+esp%C3%B1aol">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/7/90/1702505538.jpg" alt="Burn the Witch #0.8">
+                        </div>
+                        <h3>Burn the Witch #0.8
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/e/7c/1702504766.jpg" alt="Mashle 2nd Season">
+                        </div>
+                        <h3>Mashle 2nd Season
+                        </h3>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=cZsRbPSZWOc">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/c/26/1702414870.jpg" alt="Classroom of the elite 3rd Season">
+                        </div>
+                        <h3>Classroom of the elite 3rd Season
+                        </h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=Qes6RY_-diM"></a>
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/4/7f/1702508381.jpg" alt="A sign of affection">
+                        </div>
+                        <h3>A sign of affection
+                        </h3>
+                </div>
+                <div class="noti">
+                    <a href="https://www.youtube.com/watch?v=Kjta12rmtkA">
+                        <div class="imagen">
+                            <img src="https://www1.otakustv.com/storage/videos/6/5f/1657230470.jpg" alt="Solo leveling">
+                        </div>
+                        <h3>Solo leveling
+                        </h3>
+                    </a>
+                </div>
+            </div>   
+        </div>
+    </div>
     <footer>
         <p>&copy: 2023 AniMaGa. Todos los derehcos reservados</p>
     </footer> 
+</body>
 </html>
