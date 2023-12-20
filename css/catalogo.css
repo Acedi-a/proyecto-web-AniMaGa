@@ -1,0 +1,129 @@
+body {
+    background:linear-gradient(rgb(26, 2, 73), rgb(0, 0, 0), rgb(30, 3, 83));
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alata', sans-serif;
+}
+.navbar {
+    font-family: 'Alata', sans-serif;
+}
+
+.navbar, .navbar-nav, .navbar-toggler, navbar-brand {
+    background-color: rgb(26, 28, 39) ;
+}
+
+
+
+/* cuerpo */
+
+.noticias-recientes {
+    background-color: rgb(26, 28, 39);
+    max-width: 1400px;
+    width: calc(100% - 20px); 
+    margin: 20px auto; 
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+.titulo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.noti {
+    width: calc(20% - 20px); /* Ajusta el ancho al 20% para tener 5 elementos en una fila con margen */
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.noti:hover{
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    /*filter: invert(); piola*/
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0; 
+}
+
+.imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%,  black 100%);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.noti h3 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+@media (max-width: 768px) {
+    .noticias {
+        flex-wrap: wrap; 
+        justify-content: flex-start; 
+    }
+
+    .noti {
+        width: calc(50% - 15px); /* Cambia el ancho al 50% para mostrar 2 elementos en una fila con margen */
+        margin: 5px;
+    }
+
+    .noti h3 {
+        font-size: 15px; /* Ajusta el tamaño de letra para el modo responsive */
+    }
+}
+
+
+/* Cuerpo */
+
+footer {
+    background-color: rgb(32, 35, 52);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}

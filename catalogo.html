@@ -1,71 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Explora el emocionante mundo del anime y los juegos en AniMaGa. Descubre episodios, reseñas, noticias y únete a la comunidad. ¡Vive la pasión con nosotros!">
         <meta name="keywords" content="Anime,manga,game,juegos,waifu,geek,otakus,games">
         <meta name="author" content="Acedia">
+        <!-- Links de fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Kanit:wght@300&display=swap" rel="stylesheet">        
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+        <!-- Links de fuentes -->
         <link rel="icon" href="imagenes/icono.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/catalogo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <title>AniMaGa</title>
-    </head>
-    <body>
-        <div class="arriba">
-            <h1>AniMaGa</h1>
-            <div class="login">
-                <a href="login.html">
-                    <button type="button">Entrar</button>
-                </a>
-            </div>
-            <nav>
-
-                <a href="index.html">Inicio</a>
-                <a href="catalogo.html">Catalogo</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="noticias.html">Noticias</a>
-                <a href="estrenos.html">Estrenos</a>
-                <a href="aboutus.html">Sobre nosotros</a>
-                <a href="chatbot.html">
-                    <i class="fa-solid fa-face-smile-wink"></i>
-                </a>
-                </nav>
-        </div>
-
-        <div class="catalogo-header">
-            <div class="catalogo-filtros">
-                <nav>
-                    <a href="#">Orden</a>
-                    <a href="#">Año</a>
-                    <a href="#">Tipo</a>
-                    <a href="#">Genero</a>
-                    <a href="#">Estado</a>
-                </nav>
-                <input type="text" name="filtro-busqueda" id="filtro-busqueda" placeholder="Buscar anime">
-            </div>
-        </div>
-
-        <div class="catalogo-contenido">
-            <div class="anime1">
-                <img src="imagenes/portadas/megalo-box.webp" alt="megalo-box">
-                <h3>Megalo box</h3>
-                <p>Cansado de competir en peleas clandestinas para poder sobrevivir, un joven boxeador lo arriesga todo, incluyendo su vida, para competir en el torneo Megalonia.</p>
-            </div>
-            <div class="anime2">
-                <img src="imagenes/portadas/mob-psycho100.jpg" alt="mob-psycho100">
-                <p>Shigeo Kageyama (alias Mob) es un estudiante de secundaria que desea vivir una adolescencia normal. Sin embargo, él es diferente a los demás chicos de su edad porque posee poderes especiales</p> 
-            </div>
-            <div class="anime3">
-                <img src="imagenes/portadas/junji-ito-collection.jpe" alt="junji-ito-collection">
-                <h3>Junji Ito collection</h3>
-                <p>Las obras de uno de los más famosos maestros japoneses del terror, Junji Ito, finalmente dan el salto al anime. Una recopilación de historias donde cada episodio tendrá su propio protagonista y que adaptarán varias de las obras cortas del autor para hacernos sentir escalofríos y hacernos mirar a nuestro alrededor temerosos de que la oscuridad que nos rodea nos engulla.</p>
+    <title>AniMaGa</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+        <a class="navbar-brand" href="index.html">AniMaGa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html"><i class="fa-solid fa-face-smile-wink"></i></a>
+                </li>
+            </ul>
+            <div class="nav-item">
+                <a href="login.html" class="btn btn-outline-light">Entrar</a>
             </div>
         </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-    </body>
+    
+    <div class="seccion">
+        <div class="noticias-recientes">
+            <h2 class="titulo">Catalogo</h2>
+            <div class="noticias">
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="imagenes/portadas/cyberpunk.jpg" alt="">
+                        </div>
+                        <h3>Cyberpunk Edgerunners</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="imagenes/jujutsu.webp" alt="">
+                        </div>
+                        <h3>Jujutsu Kaisen</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://static.wikia.nocookie.net/doblaje/images/a/ab/Mushoku_Tensei-_Jobless_Reincarnation.png/revision/latest/scale-to-width-down/1200?cb=20210826234538&path-prefix=es" alt="">
+                        </div>
+                        <h3>Mushoku Tensei</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://static.wikia.nocookie.net/doblaje/images/f/f1/Frieren-_Beyond_Journey%27s_End_.jpg/revision/latest?cb=20231020174341&path-prefix=es" alt="">
+                        </div>
+                        <h3>Sousou no Frieren</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://cdn.myanimelist.net/images/anime/1032/137893.jpg" alt="">
+                        </div>
+                        <h3>Hikikomari Kyuuketsuki no Monmon</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYzFjYWU3NjgtY2M0Mi00MWY2LTlmNWUtZWI3YjZhMDY0YjZmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg" alt="">
+                        </div>
+                        <h3>Pluto</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://www3.animeflv.net/uploads/animes/covers/3894.jpg" alt="">
+                        </div>
+                        <h3>Spy x Family 2nd Season</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNDkxZGNhZTktMDgyOC00OTlkLTlhYTgtNmE3NDlmYTk5NjQxXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" alt="">
+                        </div>
+                        <h3>Undead Unluck</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjRiNzU3MDQtYzM1Ny00MTBkLWFkMDItNDk5OWQzMWVlNmJhXkEyXkFqcGdeQXVyNjA5MDIyMzU@._V1_FMjpg_UX1000_.jpg" alt="">
+                        </div>
+                        <h3>Ragna Crimson</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://a.storyblok.com/f/178900/1448x2048/9e99898508/goblin-slayer-ii-jp-key-visual.jpeg/m/filters:quality(95)format(webp)" alt="">
+                        </div>
+                        <h3>Golbin Slayer 2nd Season</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://www3.animeflv.net/uploads/animes/covers/3880.jpg" alt="">
+                        </div>
+                        <h3>Eminence in Shadow 2nd Season</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://cdn.myanimelist.net/images/about_me/ranking_items/11723815-b05e6033-967f-4ff5-8647-e13338245b88.png?t=1688178288" alt="">
+                        </div>
+                        <h3>Dr. Stone New World</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://i0.wp.com/josegeek.com/wp-content/uploads/2023/09/tokyo-revengers-temporada-3.jpg?resize=732%2C1024&ssl=1" alt="">
+                        </div>
+                        <h3>Tokyo Revengers: Tenjiku-hen</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/697c8b5ff2f49a97348b5507c06e1183.jpe" alt="">
+                        </div>
+                        <h3>Death Note</h3>
+                    </a>
+                </div>
+                <div class="noti">
+                    <a href="">
+                        <div class="imagen">
+                            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpe" alt="">
+                        </div>
+                        <h3>Attack on Titan</h3>
+                    </a>
+                </div>
+            </div>   
+        </div>
+    </div>
     <footer>
         <p>&copy: 2023 AniMaGa. Todos los derehcos reservados</p>
-    </footer>
+    </footer> 
+</body>
 </html>
