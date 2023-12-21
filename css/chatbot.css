@@ -3,34 +3,18 @@ body {
     height: 100vh;
     background-position: center;
     background-size: contain;
-    color: white;
+    color: white !important;
     margin: 0;
     justify-content: center;
     align-items: center;
     font-family: 'Alata', sans-serif;
 }
-
-.arriba{
+.navbar {
     font-family: 'Alata', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(32, 35, 52);
-    padding: 20px;
 }
 
-nav a, h1 {
-    text-decoration: none !important;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease, transform 0.3s ease; 
-    margin: 8px;
-}
-
-nav a:hover {
-    color: #ff3c00;
-    transform: translateY(10px); 
+.navbar, .navbar-nav, .navbar-toggler, navbar-brand {
+    background-color: rgb(26, 28, 39) ;
 }
 
 .seccion {

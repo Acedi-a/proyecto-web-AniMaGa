@@ -120,12 +120,9 @@ body {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    text-align: left;
-}
-
-.detalles-serie-datos-parrafo {
-    text-align: right; 
-    margin-right: 170px; 
+    font-size: 20px;
+    padding: 5px;
+    height: 200px;
 }
 
 

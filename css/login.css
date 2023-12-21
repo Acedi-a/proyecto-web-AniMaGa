@@ -1,42 +1,31 @@
 body {
-    background:linear-gradient(-45deg,rgb(85, 0, 255), rgb(0, 0, 0), rgb(85, 0, 255),black);
+    background:linear-gradient(rgb(26, 2, 73), rgb(0, 0, 0), rgb(30, 3, 83));
     height: 100vh;
     background-position: center;
-    background-size: 100% 100%;
-    background-size: cover;
+    background-size: contain;
     color: white;
     margin: 0;
-    justify-content: space;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+.navbar {
+    font-family: 'Alata', sans-serif;
+}
+
+.navbar, .navbar-nav, .navbar-toggler, navbar-brand {
+    background-color: rgb(26, 28, 39) ;
+}
+
+.btn{
+    color: black !important;
+    background-color: white !important;
+    border-radius: 25px;
+
 }
 
 .cuerpo-login{
     display: flex;
-
-}
-
-.arriba{
-    font-family: 'Alata', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(32, 35, 52);
-    padding: 20px;
-}
-
-nav a, h1 {
-    text-decoration: none !important;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease, transform 0.3s ease; 
-    margin: 8px;
-}
-
-nav a:hover {
-    color: #ff3c00;
-    transform: translateY(10px); 
 }
 
 
@@ -56,6 +45,7 @@ nav a:hover {
     margin-top: 50px;
     font-family: 'Outfit', sans-serif;
     transition: all 0.3s ease-in-out;
+    color: white;
 }
 
 @media (max-width: 768px) {
